@@ -1,0 +1,8 @@
+services:
+  sfui:
+    image: sfui
+    ports:
+      - "127.0.0.1:7171:7171"
+    volumes:
+      - ./config.yaml:/app/config.yaml:ro
+      - ./banDB.json:/app/banDB.json:rw
